@@ -1,4 +1,3 @@
-# MohammadReza Alinejad
 from bokeh.plotting import figure, output_file, show
 #=========================================== input x1,x2 y1,y2 values
 x1 = int(input("Please Enter Value of x1: "))
@@ -20,8 +19,7 @@ Y_k.append(first)
 w = first
 
 P_k = []
-P_k_first = P_Zero
-P_k.append(P_k_first)
+P_k.append(P_Zero)
 
 for i in range(0 , len_X_k):
     if P_k[i] < 0:
@@ -36,9 +34,9 @@ for i in range(0 , len_X_k):
         new_p_k = (P_k[i] + ((2 * Delta_y) - (2 * Delta_x)))
         P_k.append(new_p_k)
 #=========================================== Draw lines
-output_file("DDA lines.html")
+output_file("Bresenham lines.html")
 
-p = figure(title="DDA Algorithm", x_axis_label='x', y_axis_label='y')
+p = figure(title="Bresenham Algorithm", x_axis_label='x', y_axis_label='y')
 p.line(X_k, Y_k, legend_label="Temp.", line_width=5)
 show(p)
-# MohammadReza Alinejad
+# Araz Alinejad
